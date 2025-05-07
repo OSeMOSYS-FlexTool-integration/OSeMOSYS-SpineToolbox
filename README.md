@@ -42,8 +42,11 @@ The Toolbox takes in ready made osemosys files. This is the file you would pass 
     + Create a new alternative
     + Create a new scenario
     + Add the base scenario and the new alternative to this new scenario. The lower alternatives in the list override higher ones.
+    
     ![Scenario](./docs/scenario.png)
+    
     + Add data to this new alternative by adding rows to the data but using the new alternative in the alternative name column. Check from the data format from the base
+    
     ![Scenario](./docs/new_data.png)
 
     +  Commit changes
