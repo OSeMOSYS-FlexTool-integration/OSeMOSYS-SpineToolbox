@@ -7,6 +7,7 @@ Allows using Spine Toolbox for OSeMOSYS scenario and workflow management
 
 Load and extract two zip files. 
 The first contains the contents of this repository.
+https://github.com/OSeMOSYS-FlexTool-integration/OSeMOSYS-SpineToolbox/archive/refs/tags/1.0.0.zip
 
 The second file contains the Spine Toolbox with an executable for starting the toolbox. 
 https://github.com/spine-tools/Spine-Toolbox/releases/download/0.9.6/Spine-Toolbox-win-0.9.6.zip
