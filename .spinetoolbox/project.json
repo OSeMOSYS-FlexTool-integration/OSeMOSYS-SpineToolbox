@@ -230,7 +230,7 @@
                 {
                     "type": "path",
                     "relative": true,
-                    "path": "data/example/model.mod"
+                    "path": "mathprog_files/model.mod"
                 }
             ],
             "db_references": []
@@ -252,8 +252,8 @@
         "Read_OSeMOSYS": {
             "type": "Tool",
             "description": "",
-            "x": -473.9748946494643,
-            "y": -344.49857849072066,
+            "x": -473.9748946494644,
+            "y": -343.4900936172904,
             "specification": "read_osemosys",
             "execute_in_work": false,
             "cmd_line_args": [
@@ -307,7 +307,7 @@
                 },
                 {
                     "type": "resource",
-                    "arg": "<project>/data/example/model.mod"
+                    "arg": "<project>/mathprog_files/model.mod"
                 }
             ],
             "kill_completed_processes": false,
