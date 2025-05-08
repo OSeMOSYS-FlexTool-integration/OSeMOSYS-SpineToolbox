@@ -1,8 +1,9 @@
 import sys
 import yaml
-from ines_tools_mathprog import read_mathprog_model_structure
-from ines_tools_mathprog import read_mathprog_model_data
 from pathlib import Path
+sys.path.insert(0, '.') #needed if using the zip toolbox
+import ines_tools_mathprog.read_mathprog_model_structure as structure
+import ines_tools_mathprog.read_mathprog_model_data as data
 
 
 if __name__ == "__main__":
@@ -19,7 +20,7 @@ if __name__ == "__main__":
         data_file_name = sys.argv[3]
     param_dimens_file = str(Path(__file__).parent / "mathprog_files" / 'param_dimens.yaml')
 
-    read_mathprog_model_structure.read_mathprog_structure(settings, url_db, code_file_name, param_dimens_file)
+    structure.read_mathprog_structure(settings, url_db, code_file_name, param_dimens_file)
     print("Added model structure")
-    read_mathprog_model_data.read_mathprog_data(settings, url_db, data_file_name, param_dimens_file)
+    data.read_mathprog_data(settings, url_db, data_file_name, param_dimens_file)
     print("Added model data")

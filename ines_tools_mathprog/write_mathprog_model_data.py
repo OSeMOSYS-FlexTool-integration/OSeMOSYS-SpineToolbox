@@ -1,11 +1,7 @@
 import spinedb_api as api
 from spinedb_api import DatabaseMapping
 import sys
-import pyarrow
-import numpy
-import spinetoolbox as toolbox
 import yaml
-import copy
 
 def make_set_line(entity_class_name, target_db):
     line = []
