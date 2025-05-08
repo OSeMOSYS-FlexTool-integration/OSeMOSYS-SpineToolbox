@@ -35,7 +35,12 @@ Go to File -> New project. Find the folder OSeMOSYS-SpineToolbox that you extrac
 The Toolbox takes in ready made osemosys files. This is the file you would pass to the OSeMOSYS.
 
 1. Click Osemosys_data. Add file path by clicking the green plus symbol. Find your input file.
+
+    ![add_data](./docs/add_data.png)
 2. Click Read_OSeMOSYS. Remove the old path from the third argument by clicking it and the red minus symbol. Drag the new path from the available resources as the new third argument.
+    
+    ![remove_data](./docs/remove_data.png)
+    ![drag_data](./docs/drag_data.png)
 3. Run Read_OSeMOSYS.
 4. The Osemosys__data database should now contain your data. You can create new scenarios by:
 
@@ -47,10 +52,11 @@ The Toolbox takes in ready made osemosys files. This is the file you would pass 
     
     + Add data to this new alternative by adding rows to the data but using the new alternative in the alternative name column. Check from the data format from the base
     
-    ![Scenario](./docs/new_data.png)
+    ![new data](./docs/new_data.png)
 
     +  Commit changes
 6. Choose the new scenario from the filter selection. Running multiple scenarios at the same time is not supported.
+
     ![Filter](./docs/filter.png)
 7. Run Write_OSeMOSYS. This creates a new osemosys input file. The filename can be changed from the osemosys settings.
 8. Run Run_OSeMOSYS. Alternatively you can pass this input file to solver of your choice.
@@ -59,12 +65,12 @@ The Toolbox takes in ready made osemosys files. This is the file you would pass 
 ### Settings
 The file settings_OSeMOSYS.yaml contains the following settings for the user:
 
-model_code: The osemosys mathprog file.
-new_model_name: The name of the new input file.
-target_db: (optional, does not do anything when used in toolbox workflow)
-solution_file: OSeMOSYS solution file
-alternative_name: The alternative name that the imported data uses.
-purge: True/False. Purge the database before writing new data, if false, change the alternative name between runs
+- model_code: The osemosys mathprog file.
+- new_model_name: The name of the new input file.
+- target_db: (optional, does not do anything when used in toolbox workflow)
+- solution_file: OSeMOSYS solution file
+- alternative_name: The alternative name that the imported data uses.
+- purge: True/False. Purge the database before writing new data, if false, change the alternative name between runs
 
 
 ## Contents
