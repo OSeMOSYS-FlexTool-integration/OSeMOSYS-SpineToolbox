@@ -7,16 +7,16 @@ Allows using Spine Toolbox for OSeMOSYS scenario and workflow management
 
 Load and extract two zip files. 
 The first contains the contents of this repository.
-https://github.com/OSeMOSYS-FlexTool-integration/OSeMOSYS-SpineToolbox/archive/refs/tags/1.0.0.zip
+https://github.com/OSeMOSYS-FlexTool-integration/OSeMOSYS-SpineToolbox/archive/refs/tags/1.0.2.zip
 
 The second file contains the Spine Toolbox with an executable for starting the toolbox. 
-https://github.com/spine-tools/Spine-Toolbox/releases/download/0.9.6/Spine-Toolbox-win-0.9.6.zip
-These will only work with Windows 10 and Windows 11.
+https://github.com/spine-tools/Spine-Toolbox/releases/download/0.9.3/Spine-Toolbox-win-0.9.3.zip
+These will only work with Windows 10 and Windows 11. The zip installed Toolbox is slightly slower than the other option, but it is easier to set up and you will not have to spend time on setting up environments.
 
 ### Installation with terminal
 
 Install git.
-Git clone this repository:
+Git clone this repository to a directory of your choosing:
 
 ```
 git clone https://github.com/OSeMOSYS-FlexTool-integration/OSeMOSYS-SpineToolbox
@@ -31,9 +31,9 @@ You can install it with pipx or git.
 ## Use
 
 Start Spine Toolbox either from the executable or from terminal depending on the installation.
-Go to File -> New project. Find the folder OSeMOSYS-SpineToolbox that you extracted. You will see the toolbox symbol next to it.
+Go to File -> Open project. Find the folder OSeMOSYS-SpineToolbox that you extracted. You will see the toolbox symbol next to it.
 
-The Toolbox takes in ready made osemosys files. This is the file you would pass to the OSeMOSYS.
+The Toolbox takes in ready made osemosys text files. This is the file you would pass to the OSeMOSYS.
 
 1. Click Osemosys_data. Add file path by clicking the green plus symbol. Find your input file.
 
